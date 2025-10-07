@@ -1,26 +1,99 @@
 import java.util.Scanner;
-public class Main{
-    public static void main(String[] args) {
-        Scanner input= new Scanner(System.in);
-        System.out.println("enter the number of arrays");
-        int n= input.nextInt();
-        int a[]=new int[3];
-        System.out.println("enter the array elements");
-        for(int i=0;i<3;i++) {
-            a[i] = input.nextInt();
-        }
-        int largest=a[0];
-        int smallest=a[0];
-        for(int i=0;i<3;i++) {
-            if(a[i]>largest){
-                largest=a[i];
-            }
-            if(a[i]<smallest){
-                smallest=a[i];
-            }
-        }
-        System.out.println("The largest array is: "+largest);
-        System.out.println("The smallest array is: "+smallest);
+//class Main{
+//    static void main(String[] args){
+//        for(int i=10;i>=1;i--){
+//            System.out.println(i+"*5="+i*5);
+//        }
+//    }
+//}
+////
+//class Table{
+//    static void main(String[] args){
+//        for(int i=1;i<=10;i++) {
+//            System.out.println(i + "*20=" + i * 20);
+//        }
 
-    }
-}
+
+//    }
+//}
+//
+//class palindrome
+//{
+//    public static void main(String[]args){
+//        Scanner scanner=new Scanner(System.in);
+//        {
+//            System.out.println("enter a name");
+//        }String name=scanner.nextLine();
+//
+//        StringBuilder sb= new StringBuilder(name);
+//
+////        String str= sb.reverse().toString();
+//
+//
+////        System.out.println(str);
+////
+////         if((name).equals(sb.reverse().toString())){
+////            System.out.println("it is palindrome");
+////         }
+////            else{
+////                System.out.println("not a palindrome");
+////            }
+////
+////    }
+//
+//class Electricity {
+//    private static int b;
+//    static void main(String[] args) {
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.print("Enter number of units: ");
+//        double units= scanner.nextDouble();
+//        double amount =0;
+//        {
+//            if (units<=50) {
+//                amount = double 50 * 0.50;
+//                {
+//                    System.out.println("within 50 units" + amount);
+//                }
+//            } else if (b <= 100) {
+//                int amount = (int) (100 * 0.75)+ (int) (50 * 0.5);
+//                {
+//                    System.out.println("within 100 units" + amount);
+//                }
+//            } else if ( b <= 200) {
+//                int amount = (int) (200 * 1.20) + (int) (50 * 0.5) + (int) (100 * 0.75);
+//                {
+//                    System.out.println("within 200 units " + amount);
+//                }
+//            } else amount = amount + (amount * (0.20));
+//        }
+//    }
+//}
+//class Squares{
+//    public static void main(String[] args) {
+//        for (int i = 0; i <= 10; i++) {
+//            int square = i * i;
+//            System.out.println("the perfect squares of" + i + "is" + square);
+//    }
+//}
+//}
+//class Length{
+//    public static void main(String[] args) {
+//        int number=1010;
+//        int length= String.valueOf(number).length();
+//        System.out.println(length);
+//
+//    }
+//}
+//class Sum{
+//    public static void main(String[] args) {
+//        int num=1234;
+//        int sum=0;
+//        while(num!=0){
+//            int digit=num%10;
+//            sum+=digit;
+//            num/=10;
+//        }
+//        System.out.println(sum);
+//    }
+//}
+

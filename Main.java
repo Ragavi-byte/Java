@@ -1,41 +1,26 @@
 import java.util.Scanner;
-class Main{
-    public static void main(String[]args){
-        for(int i=10;i>=1;i--){
-            System.out.println(i+"*5="+i*5);
+public class Main{
+    public static void main(String[] args) {
+        Scanner input= new Scanner(System.in);
+        System.out.println("enter the number of arrays");
+        int n= input.nextInt();
+        int a[]=new int[3];
+        System.out.println("enter the array elements");
+        for(int i=0;i<3;i++) {
+            a[i] = input.nextInt();
         }
-    }
-}
-//
-class Table{
-    public static void main(String[]args){
-        for(int i=1;i<=10;i++) {
-            System.out.println(i + "*20=" + i * 20);
-        }
-    }
-}
-//
-class palindrome
-{
-    public static void main(String[]args){
-        Scanner scanner=new Scanner(System.in);
-        {
-            System.out.println("enter a name");
-        }String name=scanner.nextLine();
-
-        StringBuilder sb= new StringBuilder(name);
-
-//        String str= sb.reverse().toString();
-
-
-//        System.out.println(str);
-
-         if((name).equals(sb.reverse().toString())){
-            System.out.println("it is palindrome");
-         }
-            else{
-                System.out.println("not a palindrome");
+        int largest=a[0];
+        int smallest=a[0];
+        for(int i=0;i<3;i++) {
+            if(a[i]>largest){
+                largest=a[i];
             }
+            if(a[i]<smallest){
+                smallest=a[i];
+            }
+        }
+        System.out.println("The largest array is: "+largest);
+        System.out.println("The smallest array is: "+smallest);
 
     }
 }

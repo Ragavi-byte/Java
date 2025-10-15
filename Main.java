@@ -1,21 +1,18 @@
-package encapsulation;
+package tasks;
 
-import abstraction.Animal;
+import java.util.Scanner;
 
-public class Main {
-    static void main() {
-        Person1 p2=new Person1();
-        Person1 p1 = new Person1(21, "Ragavi", "TamilNadu");
-        System.out.println(p1.getAge() + "," + p1.getName() + "," + p1.getAddress() + ",");
-        p1.setName("Ragavi");
-        System.out.println(p1.getName());
-        p1.age=25;
-        System.out.println(p1.getAge() + "," + p1.getName() + "," + p1.getAddress() + ",");
-        p1.setAddress("nepal" );
-        System.out.println(p1.getAddress());
-        System.out.println(p1.getAge() + "," + p1.getName() + "," + p1.getAddress() + ",");
-//        Animal a1=new Animal(90, "elephant", "jungle");
-//        System.out.println(a1.getAge() + "," + a1.getName() + "," + a1.getAddress() + ",");
-    }
-}
-
+//public class Main {
+//    public static void main(String[] args) {
+//        BankAccount b1=new BankAccount(23456789,3500);
+//        Scanner input = new Scanner(System.in);
+//        System.out.println("enter the deposit amount:");
+//        int depositamount=input.nextInt();
+//        b1.Deposit(depositamount);
+//        System.out.println("Your Balance Amount: "+b1.getBalance());
+//        Scanner input1=new Scanner(System.in);
+//        System.out.println("enter the withdraw amount:");
+//        int withdrawamount=input.nextInt();
+//        System.out.println(b1.Withdraw(withdrawamount)+" "+b1.getBalance());
+//    }
+//}

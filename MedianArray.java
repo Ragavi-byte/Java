@@ -9,7 +9,7 @@
 //        double median;
 //        int n= d.length;
 //        if(n%2!=0){
-//             median=d.length/2;
+//             median=d[d.length/2];
 //            System.out.println("median"+median);
 //        }else{
 //            median=d[n/2-1]+d[n/2]/2;
